@@ -1,9 +1,9 @@
 CC = c++
 CPPFLAGS = -Wall -Wextra -Werror -std=c++17
 VAL = valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes
-SRC = main.cpp
+SRC = main.cpp Fixed.cpp
 
-NAME = file
+NAME = ff
 
 all: $(NAME)
 
