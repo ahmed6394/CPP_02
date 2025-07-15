@@ -6,7 +6,7 @@
 /*   By: gahmed <gahmed@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/06 13:22:17 by gahmed            #+#    #+#             */
-/*   Updated: 2025/07/08 18:23:41 by gahmed           ###   ########.fr       */
+/*   Updated: 2025/07/15 15:30:12 by gahmed           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -129,7 +129,7 @@ Fixed Fixed::operator*(Fixed const& obj)
 Fixed Fixed::operator/(Fixed const& obj) const
 {
 	Fixed res;
-	res.number = number / obj.number;
+	res.number = (number << bits) / obj.number;
 	return res;
 }
 
